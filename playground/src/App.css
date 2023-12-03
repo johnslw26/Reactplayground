@@ -147,36 +147,36 @@ body {
 
 header {
 	background-color: #3d3e3d;
-	height: 170px;
+	height: 100px;
 	position: relative;
 	border-bottom: 5px solid #fc4d2a;
 	text-align: center;
 }
 
 header h1 span {
-	font-size: 14px;
+	font-size: 12px;
 	font-style: italic;
 	display: block;
 	color: #21ae99;
 	text-align: right;
-	padding-top: 15px;
+	padding-top: 0px;
 	width: 100%;
 }
 
 header h1 {
 	margin: 0;
 	text-align: center;
+	font-size: 20px;
 	color: #ebb44a;
-	padding: 25px 50px;
+	padding: 15px 100px;
 	display: inline-block;
 	position: absolute;
-	top: 10px;
-	left: 5px;
+	top: 12px;
+	left: 102px;
 	border-top: 5px solid #21ae99;
 	border-bottom: 5px solid #fc4d2a;
 	border-left: 5px solid #ebb44a;
 	border-right: 5px solid #ebb44a;
-	border-radius: 50px;
 	background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -186,7 +186,7 @@ nav {
 	align-items: center;
 	position: absolute;
 	bottom: -5px;
-	right: 0;
+	right: 102px;
 }
 
 ul {
@@ -200,11 +200,11 @@ ul {
 nav a {
 	color: #fffce8;
 
-	font-size: 18px;
+	font-size: 16px;
 }
 
 li {
-	padding: 15px 30px;
+	padding: 30px 30px;
 	position: relative;
 	border-bottom: 5px solid #fc4d2a;
 }
@@ -230,7 +230,7 @@ li:active {
 }
 
 li:hover {
-	border-bottom: 5px solid #3d3e3d !important;
+	border-bottom: 5px solid #21ae99 !important;
 	cursor: pointer !important;
 }
 
