@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Alert from "./components/Alert";
 
 interface HeaderProps {
@@ -6,6 +7,7 @@ interface HeaderProps {
 }
 
 function Header({ isAlertActive, onAlertStatusChanged }: HeaderProps) {
+  const [isHamburgerNavActive, setHamburgerNavActive] = useState(-1);
   return (
     <>
       <header>
@@ -15,48 +17,79 @@ function Header({ isAlertActive, onAlertStatusChanged }: HeaderProps) {
         </h1>
         <nav>
           <div className="hamburger">
-            <a onClick={() => {}} className="fa-solid fa-bars"></a>
+            <a
+              onClick={() => {
+                isHamburgerNavActive == 1
+                  ? setHamburgerNavActive(-1)
+                  : setHamburgerNavActive(1);
+              }}
+              className="fa-solid fa-bars"
+            ></a>
           </div>
-          <ul>
+          <ul
+            className={
+              isHamburgerNavActive >= 1 ? "" : "mobile-nav-deactivated"
+            }
+          >
             <li>
-              <a href="#">Home</a>
+              <a>Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a>About</a>
             </li>
             <li>
-              <a href="#">Pricing</a>
+              <a>Pricing</a>
             </li>
-            <li>
-              <a href="#">Services</a>
-              <ul>
+            <li
+              onClick={() => {
+                isHamburgerNavActive == 2
+                  ? setHamburgerNavActive(1)
+                  : setHamburgerNavActive(2);
+              }}
+            >
+              <a>Services</a>
+              <ul
+                className={
+                  isHamburgerNavActive == 2 ? "" : "mobile-nav-deactivated"
+                }
+              >
                 <li>
-                  <a href="#">Web Design</a>
+                  <a>Web Design</a>
                 </li>
                 <li>
-                  <a href="#">Graphic Design</a>
+                  <a>Graphic Design</a>
                 </li>
                 <li>
-                  <a href="#">SEO</a>
+                  <a>SEO</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              onClick={() => {
+                isHamburgerNavActive == 3
+                  ? setHamburgerNavActive(1)
+                  : setHamburgerNavActive(3);
+              }}
+            >
+              <a>Portfolio</a>
+              <ul
+                className={
+                  isHamburgerNavActive == 3 ? "" : "mobile-nav-deactivated"
+                }
+              >
+                <li>
+                  <a>Project 1</a>
+                </li>
+                <li>
+                  <a>Project 2</a>
+                </li>
+                <li>
+                  <a>Project 3</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#">Portfolio</a>
-              <ul>
-                <li>
-                  <a href="#">Project 1</a>
-                </li>
-                <li>
-                  <a href="#">Project 2</a>
-                </li>
-                <li>
-                  <a href="#">Project 3</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Contact</a>
+              <a>Contact</a>
             </li>
           </ul>
         </nav>

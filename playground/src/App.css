@@ -362,6 +362,10 @@ header h1 {
 /*Mobile Nav Bar*/
 
 @media only screen and (max-width: 1080px) {
+  .mobile-nav-deactivated {
+    max-height: 0px !important;
+    overflow: hidden;
+  }
   .hamburger {
     line-height: 35px;
     display: block;
@@ -400,6 +404,11 @@ header h1 {
 
   nav ul li ul {
     display: block;
+  }
+
+  nav ul li:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
   }
 
   nav ul li ul li {
