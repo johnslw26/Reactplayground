@@ -1,4 +1,11 @@
-function Header() {
+import Alert from "./components/Alert";
+
+interface HeaderProps {
+  isAlertActive: boolean;
+  onAlertStatusChanged: () => void;
+}
+
+function Header({ isAlertActive, onAlertStatusChanged }: HeaderProps) {
   return (
     <>
       <header>
@@ -7,6 +14,9 @@ function Header() {
           <span>A "family" company</span>
         </h1>
         <nav>
+          <div className="hamburger">
+            <a onClick={() => {}} className="fa-solid fa-bars"></a>
+          </div>
           <ul>
             <li>
               <a href="#">Home</a>
@@ -50,6 +60,14 @@ function Header() {
             </li>
           </ul>
         </nav>
+        {isAlertActive && (
+          //We pass in a isAlertActive boolean to the header from App.tsx, this controls the visibility of the alert, we then send a change event to the header through onAlertStatusChanged
+          <Alert onClose={onAlertStatusChanged}>
+            <b>
+              <i>The quick brown fox jumps over a lazy dog</i>
+            </b>
+          </Alert>
+        )}
       </header>
     </>
   );
