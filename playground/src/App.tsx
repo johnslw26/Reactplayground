@@ -113,7 +113,8 @@ function App() {
             onLikeButtonClick={() => {
               console.log("click");
             }}
-            heading="They're Creepy and They're Spooky!"HTML
+            heading="They're Creepy and They're Spooky!"
+            isLikeButtonVisible={true}
           >
             Step into the delightfully eerie world of Virtual Reality, where the
             bizarre becomes the norm. Join the VR adventure with a touch of
