@@ -1,0 +1,9 @@
+.heart-default:hover {
+  color: salmon;
+  cursor: pointer;
+}
+
+.heart-clicked {
+  color: salmon;
+  cursor: pointer;
+}

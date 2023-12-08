@@ -6,6 +6,7 @@ import ListGroup from "./components/ListGroup";
 import SimpleButton from "./components/SimpleButton";
 import { useState } from "react";
 import Accordion from "./components/Accordion";
+import Post from "./components/Post";
 
 function App() {
   const [isAlertActive, setAlertActivity] = useState(false);
@@ -106,6 +107,19 @@ function App() {
             possibilities for innovation and connectivity in the digital age.
           </p>
           <LeftSideBarSection />
+        </div>
+        <div className="flex-item responsive-full-length">
+          <Post
+            onLikeButtonClick={() => {
+              console.log("click");
+            }}
+            heading="They're Creepy and They're Spooky!"HTML
+          >
+            Step into the delightfully eerie world of Virtual Reality, where the
+            bizarre becomes the norm. Join the VR adventure with a touch of
+            Adams Family flair, where spooky spectacles and ghostly giggles
+            await. It's a virtual experience that's eerily entertaining!
+          </Post>
         </div>
         <div className="flex-item responsive-full-length">
           <h2>What can I do in VR?</h2>
