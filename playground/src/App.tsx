@@ -121,6 +121,84 @@ function App() {
             Adams Family flair, where spooky spectacles and ghostly giggles
             await. It's a virtual experience that's eerily entertaining!
           </Post>
+          <Post
+            onLikeButtonClick={() => {
+              console.log("click");
+            }}
+            heading="Embracing Change: A Journey to Personal Growth"
+            isLikeButtonVisible={true}
+          >
+            Change is the only constant in life, and often, it is met with
+            resistance. However, embracing change can be the key to unlocking
+            personal growth and self-discovery. In a world that is constantly
+            evolving, those who adapt and embrace change are better equipped to
+            navigate the twists and turns that life throws their way.
+            <br /> <br />
+            One of the first steps in embracing change is to cultivate a mindset
+            of openness and flexibility. Instead of fearing the unknown, view it
+            as an opportunity for learning and growth. Whether it's a career
+            change, a new relationship, or a shift in perspective, change can
+            offer valuable insights and experiences that contribute to personal
+            development.
+            <br /> <br />
+            It's essential to let go of the fear of failure and understand that
+            setbacks are an integral part of any journey towards
+            self-improvement. Each obstacle is a chance to learn, adapt, and
+            emerge stronger. Rather than seeing challenges as roadblocks,
+            consider them as stepping stones towards a better version of
+            yourself. Surrounding yourself with a supportive community can also
+            make the process of change more manageable. Seek out friends,
+            mentors, or like-minded individuals who can offer guidance,
+            encouragement, and shared experiences. A strong support system can
+            provide the emotional backing needed to navigate the uncertainties
+            that change often brings. In conclusion, embracing change is not
+            just about adapting to external circumstances; it's a journey of
+            self-discovery and personal growth. By cultivating a positive
+            mindset, learning from setbacks, and fostering a supportive
+            community, one can embark on a transformative path towards becoming
+            the best version of themselves. So, let go of the fear, embrace
+            change, and watch as it becomes a catalyst for your personal
+            evolution.
+          </Post>
+          <Post
+            onLikeButtonClick={() => {
+              console.log("click");
+            }}
+            heading="Indulging the Senses: A Love Letter to Cookies"
+            isLikeButtonVisible={true}
+          >
+            In a world filled with the hustle and bustle of daily life, there's
+            something truly magical about the simple pleasure of a cookie.
+            Whether it's a gooey chocolate chip, a delicate sugar cookie, or a
+            classic oatmeal raisin, these delectable treats have a way of
+            brightening even the gloomiest of days.
+            <br /> <br />
+            At first glance, a cookie may seem like a humble confection, but
+            it's so much more than just flour, sugar, and butter. It's a tiny
+            package of joy that engages all the senses. The tantalizing aroma
+            that wafts through the kitchen as cookies bake in the oven is enough
+            to transport anyone to a place of warmth and comfort.
+            <br /> <br />
+            The beauty of cookies lies in their versatility. From the
+            traditional family recipes passed down through generations to
+            innovative creations that push the boundaries of flavor, there's a
+            cookie for every mood and occasion. They're the perfect canvas for
+            culinary experimentation, allowing bakers to infuse their
+            personality and creativity into every batch.
+            <br /> <br />
+            Cookies are not just a treat for the taste buds; they're a nostalgic
+            journey down memory lane. The act of baking and sharing cookies has
+            a way of creating bonds and building connections. It's a gesture of
+            love that transcends cultural and generational boundaries, bringing
+            people together in the sweetest way possible.
+            <br /> <br />
+            So, the next time you find yourself reaching for a cookie, savor the
+            moment. Let the flavors dance on your tongue, inhale the comforting
+            aroma, and appreciate the memories that these delightful treats
+            evoke. Because in the world of cookies, every bite is a small
+            celebration of life's simple pleasures.
+            <br /> <br />
+          </Post>
         </div>
         <div className="flex-item responsive-full-length">
           <h2>What can I do in VR?</h2>

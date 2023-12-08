@@ -1,6 +1,5 @@
 .post {
   width: 100%;
-  border: 2px solid #3d3e3d;
   padding: 15px;
   position: relative;
   box-sizing: border-box;
@@ -9,8 +8,7 @@
 .post h3 {
   border-bottom: 2px solid #fc4d2a;
 }
-
-.post-status-Bar {
+ttom .post-status-Bar {
   position: absolute;
   bottom: 0;
 }
