@@ -1,0 +1,19 @@
+.read-more {
+  color: #fc4d2a;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  padding: 0px 0px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.limitTextLength {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

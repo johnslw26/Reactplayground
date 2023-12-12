@@ -18,7 +18,7 @@ function Post({
   return (
     <div className="post">
       <h3>{heading}</h3>
-      <p>{children}</p>
+      <div>{children}</div>
       <div className="post-status-Bar">
         <ul>
           {isLikeButtonVisible && (

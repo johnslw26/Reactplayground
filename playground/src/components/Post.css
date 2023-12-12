@@ -8,9 +8,8 @@
 .post h3 {
   border-bottom: 2px solid #fc4d2a;
 }
-ttom .post-status-Bar {
-  position: absolute;
-  bottom: 0;
+.post-status-Bar {
+  padding: 15px 0;
 }
 
 .post ul li {

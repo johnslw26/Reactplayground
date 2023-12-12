@@ -27,14 +27,7 @@ function Accordion({ accordionDescription, children }: AccordionProps) {
   const [isAccordionActive, setAccordionActive] = useState(false);
   return (
     <>
-      <div
-        onClick={() => {
-          isAccordionActive
-            ? setAccordionActive(false)
-            : setAccordionActive(true);
-        }}
-        className="accordion"
-      >
+      <div className="accordion">
         <div
           className={
             isAccordionActive
@@ -42,7 +35,15 @@ function Accordion({ accordionDescription, children }: AccordionProps) {
               : "accordion-icon arrow-right"
           }
         ></div>
-        <h4>{accordionDescription}</h4>
+        <h4
+          onClick={() => {
+            isAccordionActive
+              ? setAccordionActive(false)
+              : setAccordionActive(true);
+          }}
+        >
+          {accordionDescription}
+        </h4>
         <Panel isActive={isAccordionActive}>{children}</Panel>
       </div>
     </>
