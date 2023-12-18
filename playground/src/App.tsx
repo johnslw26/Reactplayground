@@ -262,13 +262,8 @@ function App() {
 					</Accordion>
 				</div>
 				<div className="flex-item responsive-full-length">
-					<LightBox
-						isLightboxVisible={isLightboxVisible}
-						onClose={() => {
-							setLightboxVisible(false);
-						}}>
-						<ExpenseForm categories={categories} onFormSubmit={handleUpdateItems}></ExpenseForm>
-					</LightBox>
+					<br />
+					<br />
 					<button
 						className="expense-list-show-form-button"
 						onClick={() => {
@@ -285,6 +280,13 @@ function App() {
 					<ExpenseList onDelete={handleDelete} items={expenseList} currentCategory={currentCategory} />
 				</div>
 			</div>
+			<LightBox
+				isLightboxVisible={isLightboxVisible}
+				onClose={() => {
+					setLightboxVisible(false);
+				}}>
+				<ExpenseForm categories={categories} onFormSubmit={handleUpdateItems}></ExpenseForm>
+			</LightBox>
 			<Footer />
 		</>
 	);
